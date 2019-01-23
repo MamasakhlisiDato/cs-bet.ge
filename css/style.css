@@ -1,0 +1,392 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* მარჯვენა და მარცხენა მხარე */
+.left {
+    float: left;
+    width: 40%;
+    height: 100vh;
+    background: #1f1f1f;
+    background:url('../images/fixed.jpg');
+    background-size: cover;
+    position: fixed;
+    border-right: 2px solid #41AB01;
+}
+.right{
+    display: flex;
+    float: right;
+    width: 60%;
+    height: 100vh;
+    background:url('../images/background.jpg');
+    background-size: cover;
+}
+.section2{
+    display: flex;
+    float: right;
+    width: 60%;
+    height: 100vh;
+    background:url('../images/background2.jpg');
+    background-size: cover;
+}
+/* მარჯვენა მხარე */
+/* შესვლის ფორმა */
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+#form label {
+    border-left: solid #41AB01 2px;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: "ALK Rex Bold", sans-serif;
+}
+#form input {
+    margin-bottom: 1.3rem;
+    width: 80%;
+    border-radius: 2px;
+    background: #282828;
+    color: #41AB01;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    line-height: 1.3rem;
+    font-family: "BPG Nino Elite", sans-serif;
+    font-weight: bold;
+}
+::placeholder {
+    text-align: center;
+    font-weight: bold;
+}
+.psw {
+    text-align: center;
+    color: #41AB01;
+    font-family: "ALK Rex Bold", sans-serif;
+}
+.psw a {
+    color: #ffffff;
+    font-family: "ALK Rex Bold", sans-serif;
+    font-size: 12px;
+}
+.login {
+    font-family: "ALK Rex Bold", sans-serif;
+    padding: 10px 60px;
+    color: #ffffff;
+    border: 0;
+    background-color: #41AB01;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    filter: brightness(80%);
+}
+.login:hover {
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.863); 
+    filter: brightness(100%);
+}
+#logo {
+    display: flex;
+    justify-content: center;
+}
+#logo img{
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+}
+@media only screen and (max-width: 1074px) {
+    #form input {
+        width: 50%;
+   }
+    #logo img{
+        margin-bottom: 20px;
+        width: 100px;
+        height: 100px;
+   }
+    .login {
+        padding: 10px 10px;
+   }
+    .psw {
+        text-align: center;
+        color: #41AB01;
+        font-family: "ALK Rex Bold", sans-serif;
+        font-size: 13px;
+   }
+    .psw a {
+        color: #ffffff;
+        font-family: "ALK Rex Bold", sans-serif;
+        font-size: 12px;
+   }
+}
+/* მენიუ */
+.navbar{
+    background-color: #282828;
+    width: 100%;
+}
+.navbar ul {
+    display: flex;
+    justify-content: flex-start;
+}
+.navbar ul li {
+    list-style: none;
+    padding: 5px 0px;
+    margin-right: 12px;
+}
+.navbar ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    font-family: "ALK Rex Bold", sans-serif;
+    transition: 300ms;
+}
+.navbar ul li a:hover {
+    color: #41AB01;
+}
+.navbar .active a {
+    color: #41AB01;
+}
+#dl-menu {
+    display: none;
+}
+@media only screen and (max-width: 1074px) {
+    .navbar {
+        display: none;
+   }
+    #dl-menu {
+        display: block;
+   }
+}
+@media only screen and (max-width: 1350px) {
+    .navbar ul li a {
+        font-size: 14px;
+   }
+}
+@media only screen and (max-width: 1214px) {
+    .navbar ul li a {
+        font-size: 12px;
+   }
+}
+/* მარჯვენა მხარე */
+.right .showcase {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.section2 .showcase2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.showcase h1 {
+    font-size: 50px;
+    color: #ffffff;
+    font-family: "ALK Rex Bold", sans-serif;
+    text-shadow: 1px 1px 50px rgb(0, 0, 0);
+}
+.showcase h3 {
+    font-family: "ALK Rex Bold", sans-serif;
+    font-size: 50px;
+    color: #41AB01; 
+    text-shadow: 11px 11px 50px rgb(0, 0, 0);
+}
+
+.showcase2 h1 {
+    font-size: 50px;
+    color: #ffffff;
+    font-family: "ALK Rex Bold", sans-serif;
+    text-shadow: 1px 1px 50px rgb(0, 0, 0);
+}
+.showcase2 h3 {
+    font-family: "ALK Rex Bold", sans-serif;
+    font-size: 20px;
+    padding: 50px;
+    color: #41AB01; 
+    text-shadow: 11px 11px 50px rgb(0, 0, 0);
+}
+@media only screen and (max-width: 1074px) {
+    .section2 .showcase {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+   }
+    .showcase h1 {
+        font-size: 35px;
+        color: #ffffff;
+        font-family: "ALK Rex Bold", sans-serif;
+   }
+    .showcase h3 {
+        font-size: 40px;
+        color: #41AB01;
+        font-family: "ALK Rex Bold", sans-serif;
+        font-weight: bold;
+   }
+   .showcase2 h3 {
+    font-family: "ALK Rex Bold", sans-serif;
+    font-size: 17px;
+    padding: 50px;
+    color: #41AB01; 
+    text-shadow: 11px 11px 50px rgb(0, 0, 0);
+}
+}
+@media only screen and (max-width: 414px) {
+
+   .showcase2 h3 {
+    font-family: "ALK Rex Bold", sans-serif;
+    font-size: 11px;
+    padding: 20px;
+    color: #41AB01; 
+    text-shadow: 11px 11px 50px rgb(0, 0, 0);
+}
+}
+
+@media only screen and (max-width: 320px) {
+
+    .showcase2 h3 {
+     font-family: "ALK Rex Bold", sans-serif;
+     font-size: 9px;
+     padding: 10px;
+     color: #41AB01; 
+     text-shadow: 11px 11px 50px rgb(0, 0, 0);
+ }
+ }
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 2170px) {
+    #form input {
+        width: 50%;
+    }
+    #form label {
+        font-size: 50px;
+    }
+    #logo img{
+        margin-bottom: 20px;
+        width: 400px;
+        height: 400px;
+   }
+   .login {
+    padding: 20px 50px;
+    font-size: 20px;
+    }
+    .psw {
+        text-align: center;
+        color: #41AB01;
+        font-family: "ALK Rex Bold", sans-serif;
+        font-size: 30px;
+    }
+    .psw a {
+        color: #ffffff;
+        font-family: "ALK Rex Bold", sans-serif;
+        font-size: 25px;
+    }
+
+    .showcase h1 {
+        font-size: 80px;
+        color: #ffffff;
+        font-family: "ALK Rex Bold", sans-serif;
+    }
+    .showcase h3 {
+        font-size: 80px;
+        color: #41AB01;
+        font-family: "ALK Rex Bold", sans-serif;
+        font-weight: bold;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        padding: 5px 0px;
+        margin-right: 35px;
+    }
+    .navbar ul li a {
+        font-size: 25px;
+        text-decoration: none;
+        color: #fff;
+        font-family: "ALK Rex Bold", sans-serif;
+        transition: 300ms;
+    }
+}
+
+
+
+
+
+
+
+
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #282828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > img {
+    width: 100px;
+}
+
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.thumb {
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+
+
+
+
+#section1 {
+    width: 100%;
+    height: 100vh;
+    background: #1f1f1f;
+}
+#section2 {
+    width: 100%;
+    height: 100vh;
+    background: #1f1f1f;
+}
