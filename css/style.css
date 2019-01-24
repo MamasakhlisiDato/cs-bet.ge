@@ -221,7 +221,7 @@ html{
     font-size: 20px;
     padding: 50px;
     color: #41AB01; 
-    text-shadow: 11px 11px 50px rgb(0, 0, 0);
+
 }
 @media only screen and (max-width: 1074px) {
     .section2 .showcase {
@@ -389,4 +389,24 @@ html{
     width: 100%;
     height: 100vh;
     background: #1f1f1f;
+}
+
+
+.regbtn {
+    font-family: "ALK Rex Bold", sans-serif;
+    padding: 10px 60px;
+    color: #ffffff;
+    border: 0;
+    background-color: #41AB01;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    filter: brightness(80%);
+    text-decoration: none;
+}
+.regbtn:hover {
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.863); 
+    filter: brightness(100%);
 }
